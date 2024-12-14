@@ -4,7 +4,7 @@ const Calculator = () => {
     const [result, setResult] = useState("");
     const [message, setMessage] = useState("");
     const [weight, setWeight] = useState(75); 
-    const [height, setHeight] = useState(175); 
+    const [height, setHeight] = useState(1.75); 
 
     
     function calculateBMI() {
@@ -65,7 +65,7 @@ const Calculator = () => {
             {result && (
                 <>
                     <p>Your BMI is {result}</p>
-                    <p>{message}</p>
+                    <p className={result > 24.9 ? "red" : (result >= 18.5 && result <= 24.9 ? "green" : "blue")}>{message}</p>
                 </>
             )}
         </div>
