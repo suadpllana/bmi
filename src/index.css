@@ -1,7 +1,32 @@
-body{
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bmi-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    max-width: 400px;
+    width: 100%;
+
+    font-size: 28px;    color: #fff;
+  }
+
+  .bmi-card h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffff;
+  }
 button{
     background-color: tomato;
     width: 110px;

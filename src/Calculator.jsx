@@ -13,11 +13,11 @@ const Calculator = () => {
 
       
         if (bmi > 24.9) {
-            setMessage("You are overweight");
+            setMessage("Overweight");
         } else if (bmi >= 18.5 && bmi <= 24.9) {
-            setMessage("You are healthy");
+            setMessage("Healthy");
         } else {
-            setMessage("You are underweight");
+            setMessage("Underweight");
         }
     }
 
@@ -34,7 +34,7 @@ const Calculator = () => {
     };
 
     return (
-        <div>
+        <div className="bmi-card">
             <h1>BMI Calculator</h1>
             <label>Weight in KG</label>
             <input
@@ -65,7 +65,7 @@ const Calculator = () => {
             {result && (
                 <>
                     <p>Your BMI is {result}</p>
-                    <p className={result > 24.9 ? "red" : (result >= 18.5 && result <= 24.9 ? "green" : "blue")}>{message}</p>
+                    <p className={result > 24.9 ? "red" : (result >= 18.5 && result <= 24.9 ? "green" : "blue")}>Category: {message}</p>
                 </>
             )}
         </div>
