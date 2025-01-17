@@ -34,6 +34,7 @@ const Calculator = () => {
     };
 
     return (
+        <div>
         <div className="bmi-card">
             <h1>BMI Calculator</h1>
             <label>Weight in KG</label>
@@ -68,6 +69,7 @@ const Calculator = () => {
                     <p className={result > 24.9 ? "red" : (result >= 18.5 && result <= 24.9 ? "green" : "blue")}>Category: {message}</p>
                 </>
             )}
+        </div>
         </div>
     );
 };

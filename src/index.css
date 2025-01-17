@@ -6,19 +6,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
   }
   
   .bmi-card {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    padding: 100px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
-    max-width: 400px;
     width: 100%;
 
+    height: auto;
     font-size: 28px;    color: #fff;
   }
 
@@ -27,16 +27,7 @@ body {
     margin-bottom: 20px;
     color: #ffff;
   }
-button{
-    background-color: tomato;
-    width: 110px;
-    cursor: pointer;
-    height: 35px;
-    border-radius: 20px;
-    border-radius: 4px solid blue;
-    font-size: 18px;
-    color: white;
-}
+
 .green{
     color: green;
 }
@@ -45,4 +36,14 @@ button{
 }
 .red{
     color: red;
+}
+@media (max-width: 767px){
+  .bmi-card{
+    width: 100%;
+    font-size: 20px;
+    height: 40vh;
+  }
+  .bmi-card h1{
+    font-size: 2rem;
+  }
 }
